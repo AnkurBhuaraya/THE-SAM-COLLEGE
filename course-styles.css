@@ -1,0 +1,66 @@
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.course-section {
+    background: #fff3f3;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    color: #333;
+}
+
+.course-section:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+}
+
+p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+
+hero-btn {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero-btn:hover {
+    background: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    .course-section {
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 16px;
+    }
+}

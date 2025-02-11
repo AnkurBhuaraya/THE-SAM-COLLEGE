@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Humanities</title>
+    <link rel="stylesheet" href="course-styles.css">
+    <link rel="stylesheet" href="samstyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="sam_index.html"><img src="imges/logo.png"></a>
+            <div class="nav_links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="sam_index.html">HOME</a></li>
+                    <li><a href="sam_about.html">ABOUT</a></li>
+                    <li><a href="sam_course.html">COURSES</a></li>
+                    <li><a href="sam_blog.html">BLOG</a></li>
+                    <li><a href="sam_contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Department of Humanities</h1>
+    </section>
+
+    <div class="container">
+        <div class="course-section">
+            <h2>About the Department</h2>
+            <p>The Humanities Department focuses on understanding the human experience through disciplines such as history, literature, philosophy, and sociology.</p>
+        </div>
+        <div class="course-section">
+            <h2>Courses Offered</h2>
+            <ul>
+                <li>Bachelor of Arts in History</li>
+                <li>Master of Arts in Literature</li>
+                <li>Diploma in Social Sciences</li>
+                <li>Philosophy and Ethics Certification</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- -----Footer----- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are dedicated to providing quality education and fostering a dynamic learning environment for students. <br> 
+            Our institution is committed to academic excellence, innovation, and holistic development.</p>
+         <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin-square"></i>
+        </div>
+    </section>
+
+    <!-- -------JavaScript for Toggle Menu------- -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
